@@ -7,7 +7,7 @@
 
 <html>
 <head>
-<title> 42 * </title>
+<title>icebowl.cc</title>
 <style>
 html{
  font-family: system-ui, sans-serif;
@@ -70,7 +70,7 @@ green     #859900
 </head>
 <body>
 <div class = "thetop">
-icebowl.cc
+icebowl.cc<br />
 <div style="background-color:#203731 ; color:white;padding:1px;">#203731</div>
 <div style="background-color:#ffb612; color:white;padding:1px;">#ffb612</div>
 <div style="background-color:#71b09f; color:white;padding:1px;">#71b09f</div>
@@ -96,7 +96,7 @@ $filename = array();
 $imgname = array();
 if ($handle = opendir('.')) {
   while (false !== ($file = readdir($handle))){
-    if ($file != "." &&  $file != "index.php" &&  $file != ".htaccess" ){
+    if ($file != "." &&  $file != "index.php" &&  $file != ".htaccess" &&  $file != ".git" &&  $file != "css" &&  $file != "img" &&  $file != "README.md"){
       $imgname[$count] = "file.png";
       			if (false === strpos((string)$file ,'.'))$imgname[$count] = "folder.png";
 
@@ -137,7 +137,7 @@ for ($i = 0; $i < sizeof($filelist);$i++){
 echo "<br /><a href = '"."$filelist[$parent]"."'>"."<img src = 'http://icebowl.cc/img/back.png'></a>";
 echo "&nbsp;<a href = '"."$filelist[$parent]"."'>"."$filename[$parent]"."</a>";
 ?>
-<br /> <br />
+<br /> 
 </h2>
 </div>
 

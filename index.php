@@ -40,6 +40,13 @@ a:hover{
   border-radius: 30px;
   padding : 10px;
 
+.thetop{
+  position:absolute;
+  top:10px;
+  left:10%;
+  font-family: system-ui , sans-serif;
+  background-color: #fff ;
+  color: #2aa198;
 }
 /*
 base03    #002b36
@@ -62,6 +69,18 @@ green     #859900
 </style>
 </head>
 <body>
+<div class = "thetop">
+icebowl.cc
+<div style="background-color:#203731 ; color:white;padding:1px;">#203731</div>
+<div style="background-color:#ffb612; color:white;padding:1px;">#ffb612</div>
+<div style="background-color:#71b09f; color:white;padding:1px;">#71b09f</div>
+<div style="background-color:#79b0aa; color:white;padding:1px;">#79b0aa </div>
+<div style="background-color:#7fbbb3; color:white;padding:1px;">#7fbbb3</div>
+<div style="background-color:#7a8787; color:white;padding:1px;">#7a8787;</div>
+<div style="background-color:#b1c7c7; color:white;padding:1px;">#b1c7c7;</div>
+
+
+</div>
 <div class = "location">
 <?php
 //error_reporting(0);
@@ -112,15 +131,13 @@ for ($i = 0; $i < sizeof($filelist);$i++){
 
 for ($i = 0; $i < sizeof($filelist);$i++){
   if ($i == $parent ) continue;
-  echo "<img src = 'http://wa-appliedmath.org/img/".$imgname[$i]."'>";
+  echo "<img src = 'http://icebowl.cc/img/".$imgname[$i]."'>";
   echo "<a href = '"."$filelist[$i]"."'>"."$filename[$i]"." </a><br>";
 }
-echo "<br /><a href = '"."$filelist[$parent]"."'>"."<img src = 'http://wa-appliedmath.org/img/back.png'></a>";
+echo "<br /><a href = '"."$filelist[$parent]"."'>"."<img src = 'http://icebowl.cc/img/back.png'></a>";
 echo "&nbsp;<a href = '"."$filelist[$parent]"."'>"."$filename[$parent]"."</a>";
 ?>
 <br /> <br />
-Please contact me if you have any questions.   <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4>{ THIS SECTION OF THE WEBSITE IS UNDER CONSTRUCTION. }</h4>
 </h2>
 </div>
 
